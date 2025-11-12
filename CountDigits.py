@@ -17,3 +17,16 @@ class Solution:
             if d != 0 and n % d == 0:
                 count += 1
         return count
+
+
+class Solution:
+    def evenlyDivides(self, n):
+        count = 0
+        temp = n
+        while(n>0):
+            d = n%10
+            if d!=0 and temp %d ==0:
+                count+=1
+            n=n//10
+        return count
+            
